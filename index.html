@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport tag: Makes the page fit properly on mobile screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeNest - Learn Coding Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Navigation Bar ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Code<span>Nest</span></a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-small">Join Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Learn Coding Step by Step, Online</h1>
+        <p>Learn HTML, CSS, JavaScript, and Python through simple lessons and real projects. Designed especially for beginners.</p>
+        <div class="hero-buttons">
+          <a href="#courses" class="btn">View Courses</a>
+          <a href="#contact" class="btn btn-outline">Free Demo Class</a>
+        </div>
+      </div>
+
+      <div class="hero-box">
+        <p class="code-line">&lt;h1&gt;Hello, World!&lt;/h1&gt;</p>
+        <p class="code-line">body { color: blue; }</p>
+        <p class="code-line">console.log("I can code!");</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Courses Section ===== -->
+  <section class="section" id="courses">
+    <div class="container">
+      <h2>Our Popular Courses</h2>
+      <p class="section-sub">Choose a course according to your skill level.</p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon">🌐</div>
+          <h3>HTML &amp; CSS</h3>
+          <p>Learn how to build website structures and designs. Perfect for beginners.</p>
+          <span class="tag">4 Weeks</span>
+        </div>
+
+        <div class="card">
+          <div class="icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Make websites interactive using buttons, forms, and the DOM.</p>
+          <span class="tag">6 Weeks</span>
+        </div>
+
+        <div class="card">
+          <div class="icon">🐍</div>
+          <h3>Python Basics</h3>
+          <p>Learn programming basics, build logical thinking, and create small projects.</p>
+          <span class="tag">5 Weeks</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Why Us Section ===== -->
+  <section class="section light-bg" id="why-us">
+    <div class="container">
+      <h2>Why Learn With Us?</h2>
+      <p class="section-sub">Easy learning, real-world practice.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Project Based</h3>
+          <p>Build real projects in every course instead of just learning theory.</p>
+        </div>
+        <div class="card">
+          <h3>Flexible Timing</h3>
+          <p>Watch recorded lessons anytime, at your own pace.</p>
+        </div>
+        <div class="card">
+          <h3>Doubt Support</h3>
+          <p>Have a question? Ask our mentors directly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Call To Action Section ===== -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <h2>Ready to Start Coding?</h2>
+      <p>Enter your name and email, and we'll send you the link to a free demo class.</p>
+
+      <form class="cta-form" id="demoForm">
+        <input type="text" id="name" placeholder="Your name" required>
+        <input type="email" id="email" placeholder="Your email" required>
+        <button type="submit" class="btn btn-white">Book Free Demo</button>
+      </form>
+      <p class="form-msg" id="formMsg"></p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 CodeNest. </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```

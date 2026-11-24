@@ -1,0 +1,373 @@
+/* ===== Basic Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0f2a4a;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  background: #0e7c86;
+  color: #ffffff;
+  padding: 12px 26px;
+  border-radius: 6px;
+  font-weight: 500;
+  border: 2px solid #0e7c86;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0b666e;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #0e7c86;
+}
+
+.btn-outline:hover {
+  background: #0e7c86;
+  color: #ffffff;
+}
+
+.btn-small {
+  padding: 8px 18px;
+  font-size: 14px;
+}
+
+.btn-white {
+  background: #ffffff;
+  color: #0f2a4a;
+  border-color: #ffffff;
+}
+
+.btn-white:hover {
+  background: #dff1f2;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f2a4a;
+}
+
+.logo span {
+  color: #0e7c86;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #0f2a4a;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #0e7c86;
+}
+
+.nav-links .btn-small {
+  color: #ffffff;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #0f2a4a;
+}
+
+/* ===== Hero ===== */
+.hero {
+  background: #eef3f8;
+  padding: 80px 0;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.hero-text p {
+  font-size: 17px;
+  color: #5b6b7f;
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-box {
+  flex: 1;
+  background: #0f2a4a;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.code-line {
+  color: #7fd1d8;
+  font-family: monospace;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.code-line:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== Sections ===== */
+.section {
+  padding: 70px 0;
+}
+
+.light-bg {
+  background: #f6f8fb;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.section-sub {
+  text-align: center;
+  color: #5b6b7f;
+  margin-bottom: 40px;
+}
+
+/* Cards - CSS Grid use kiya hai */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #dbe3ec;
+  border-radius: 10px;
+  padding: 28px 24px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(15, 42, 74, 0.15);
+}
+
+.icon {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.card p {
+  color: #5b6b7f;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.tag {
+  display: inline-block;
+  background: #dff1f2;
+  color: #0e7c86;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+/* ===== Call To Action ===== */
+.cta {
+  background: #0f2a4a;
+  color: #ffffff;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  margin-bottom: 28px;
+}
+
+.cta-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cta-form input {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 15px;
+  width: 250px;
+}
+
+.form-msg {
+  margin-top: 18px;
+  font-weight: 500;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #0f2a4a;
+  color: #c3cddb;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+/* ===== Responsive: Tablet (max 900px) ===== */
+@media (max-width: 900px) {
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== Responsive: Mobile (max 768px) ===== */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  /* Mobile par menu chhupa rahega, button dabane par dikhega */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 18px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-box {
+    width: 100%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .section,
+  .cta {
+    padding: 50px 0;
+  }
+}
+
+/* ===== Small phones (max 480px) ===== */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .section h2,
+  .cta h2 {
+    font-size: 26px;
+  }
+
+  .cta-form input,
+  .cta-form .btn {
+    width: 100%;
+  }
+}
